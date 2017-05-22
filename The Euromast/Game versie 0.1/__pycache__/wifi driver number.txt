@@ -1,0 +1,4 @@
+Intel Dual Band Wireless-AC 7265
+
+24-9-2015
+versie: 18.21.0.2

@@ -1,0 +1,27 @@
+CREATE TABLE IF NOT EXISTS playerscorelist (
+    playername varchar(25),
+    playerscore int,
+    PRIMARY KEY (playername)
+);
+
+CREATE TABLE IF NOT EXISTS save_game(
+    sg_id integer, 
+    sg_name varchar(20),
+    PRIMARY KEY(sg_id));
+
+CREATE TABLE IF NOT EXISTS save_game_turn(
+	sgt_id integer, 
+	player_id integer,
+	PRIMARY KEY(sgt_id));
+    
+CREATE TABLE IF NOT EXISTS save_game_players(
+	player_id integer,
+    sg_id integer,
+	sgp_x_position integer,
+	sgp_y_position integer, 
+	sgp_position_name varchar(15),
+	sgp_name varchar(15),
+	sgp_is_computer_player boolean,
+	PRIMARY KEY(player_id)); 
+   
+SELECT * FROM save_game_turn
